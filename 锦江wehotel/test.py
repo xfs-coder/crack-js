@@ -1,5 +1,6 @@
 # coding='utf-8'
 
+# https://hotel.bestwehotel.com/NewLogin/
 
 import execjs
 
