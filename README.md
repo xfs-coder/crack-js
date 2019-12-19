@@ -1,2 +1,2 @@
 # crack-js
-js-reverse
+仅供学习参考，切勿用于商业用途
