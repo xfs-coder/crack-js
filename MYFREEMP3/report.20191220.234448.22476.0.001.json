@@ -1,0 +1,303 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20191220.234448.22476.0.001.json",
+    "dumpEventTime": "2019-12-20T23:44:48Z",
+    "dumpEventTimeStamp": "1576856688216",
+    "processId": 22476,
+    "cwd": "F:\\编程实战\\爬虫\\crack-js\\MYFREEMP3",
+    "commandLine": [
+      "E:/nodejs/node.exe",
+      "test.js"
+    ],
+    "nodejsVersion": "v12.4.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.4.0",
+      "v8": "7.4.288.27-node.18",
+      "uv": "1.29.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.38.0",
+      "napi": "4",
+      "llhttp": "1.1.3",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1b",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.4.0/node-v12.4.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.4.0/node-v12.4.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.4.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18362",
+    "osVersion": "Windows 10 Home China",
+    "osMachine": "x86_64",
+    "host": "DESKTOP-VAG54VF"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff691ce64a9",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+9161"
+    },
+    {
+      "pc": "0x00007ff691ce9d94",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+23732"
+    },
+    {
+      "pc": "0x00007ff691ce8db8",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+19672"
+    },
+    {
+      "pc": "0x00007ff691dd256b",
+      "symbol": "uv_loop_fork+48251"
+    },
+    {
+      "pc": "0x00007ff69210a56e",
+      "symbol": "v8::internal::Parser::ReportMessageAt+206"
+    },
+    {
+      "pc": "0x00007ff6920de5ea",
+      "symbol": "v8::internal::wasm::StreamingDecoder::Fail+666"
+    },
+    {
+      "pc": "0x00007ff692174a3c",
+      "symbol": "v8::internal::Heap::CreateFillerObjectAt+2972"
+    },
+    {
+      "pc": "0x00007ff6921b231c",
+      "symbol": "v8::internal::Factory::NewFixedArrayWithFiller+60"
+    },
+    {
+      "pc": "0x00007ff6921b22d0",
+      "symbol": "v8::internal::Factory::NewUninitializedFixedArray+64"
+    },
+    {
+      "pc": "0x00007ff69239dc5e",
+      "symbol": "v8_inspector::V8StackTraceId::V8StackTraceId+123470"
+    },
+    {
+      "pc": "0x00007ff6924bfe02",
+      "symbol": "v8::internal::OptimizingCompileDispatcher::Unblock+14882"
+    },
+    {
+      "pc": "0x00007ff692974196",
+      "symbol": "v8::internal::NativesCollection<0>::GetScriptsSource+662454"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 1018761216,
+    "totalCommittedMemory": 1018761216,
+    "usedMemory": 985119240,
+    "availableMemory": 1211386896,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 524288,
+        "committedMemory": 524288,
+        "capacity": 523976,
+        "used": 31712,
+        "available": 492264
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 33554432,
+        "capacity": 16767232,
+        "used": 1693912,
+        "available": 15073320
+      },
+      "old_space": {
+        "memorySize": 1695744,
+        "committedMemory": 1695744,
+        "capacity": 1351456,
+        "used": 1351456,
+        "available": 0
+      },
+      "code_space": {
+        "memorySize": 688128,
+        "committedMemory": 688128,
+        "capacity": 154496,
+        "used": 154496,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 528384,
+        "committedMemory": 528384,
+        "capacity": 167280,
+        "used": 167280,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 981721088,
+        "committedMemory": 981721088,
+        "capacity": 981716928,
+        "used": 981716928,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3456,
+        "used": 3456,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16767232,
+        "used": 0,
+        "available": 16767232
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 4.453,
+    "kernelCpuSeconds": 1.171,
+    "cpuConsumptionPercent": 112.48,
+    "maxRss": 2125385728,
+    "pageFaults": {
+      "IORequired": 739929,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 2,
+      "writes": 6
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "ACLOCAL_PATH": "/mingw64/share/aclocal:/usr/share/aclocal",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\DELL\\AppData\\Roaming",
+    "asl.log=Destination": "file",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "132054706457384518",
+    "CLASSPATH": ";C:\\Program Files\\Java\\jdk1.8.0_221\\bin;C:\\Program Files\\Java\\jdk1.8.0_221\\jre\\bin;",
+    "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-VAG54VF",
+    "COMSPEC": "C:\\WINDOWS\\system32\\cmd.exe",
+    "CONFIG_SITE": "/mingw64/etc/config.site",
+    "DISPLAY": "needs-to-be-defined",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "EXEPATH": "E:\\Git",
+    "HOME": "C:\\Users\\DELL",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\DELL",
+    "HOSTNAME": "DESKTOP-VAG54VF",
+    "INFOPATH": "/usr/local/info:/usr/share/info:/usr/info:/share/info",
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk1.8.0_221",
+    "JAVA_OPTS=-Xms1024M -Xmx8000M -XX:PermSize=256M -XX:MaxNewSize=256M -XX:MaxPermSize": "512M",
+    "LANG": "zh_CN.UTF-8",
+    "LOCALAPPDATA": "C:\\Users\\DELL\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-VAG54VF",
+    "MANPATH": "/mingw64/local/man:/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man",
+    "MINGW_CHOST": "x86_64-w64-mingw32",
+    "MINGW_PACKAGE_PREFIX": "mingw-w64-x86_64",
+    "MINGW_PREFIX": "/mingw64",
+    "MSYSTEM": "MINGW64",
+    "MSYSTEM_CARCH": "x86_64",
+    "MSYSTEM_CHOST": "x86_64-w64-mingw32",
+    "MSYSTEM_PREFIX": "/mingw64",
+    "NUMBER_OF_PROCESSORS": "8",
+    "OneDrive": "C:\\Users\\DELL\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\DELL\\OneDrive",
+    "ORIGINAL_PATH": "E:\\Git\\mingw64\\bin;E:\\Git\\usr\\bin;C:\\Users\\DELL\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\dotnet;E:\\Redis;E:\\mysql\\bin;E:\\PuTTY;E:\\nodejs;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Intel\\WiFi\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\Java\\jdk1.8.0_221\\bin;E:\\Anaconda;E:\\Anaconda\\Library\\mingw-w64\\bin;E:\\Anaconda\\Library\\usr\\bin;E:\\Anaconda\\Library\\bin;E:\\Anaconda\\Scripts;E:\\MongoDB\\Server\\4.0\\bin;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\Users\\DELL\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\DELL\\AppData\\Local\\GitHubDesktop\\bin;E:\\Git\\Git\\bin;E:\\Tesseract-OCR;E:\\Fiddler;C:\\Users\\DELL\\AppData\\Roaming\\npm;E:\\Sublime Text 3;C:\\Users\\DELL\\AppData\\Local\\Microsoft\\WindowsApps;E:\\android-ndk-r20b;E:\\adt-bundle-windows-x86_64-20140702\\sdk\\platform-tools;E:\\ffmpeg\\bin",
+    "ORIGINAL_TEMP": "/tmp",
+    "ORIGINAL_TMP": "/tmp",
+    "OS": "Windows_NT",
+    "PATH": "C:\\Users\\DELL\\bin;E:\\Git\\mingw64\\bin;E:\\Git\\usr\\local\\bin;E:\\Git\\usr\\bin;E:\\Git\\usr\\bin;E:\\Git\\mingw64\\bin;E:\\Git\\usr\\bin;C:\\Users\\DELL\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\dotnet;E:\\Redis;E:\\mysql\\bin;E:\\PuTTY;E:\\nodejs;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Intel\\WiFi\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\Java\\jdk1.8.0_221\\bin;E:\\Anaconda;E:\\Anaconda\\Library\\mingw-w64\\bin;E:\\Anaconda\\Library\\usr\\bin;E:\\Anaconda\\Library\\bin;E:\\Anaconda\\Scripts;E:\\MongoDB\\Server\\4.0\\bin;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\Users\\DELL\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\DELL\\AppData\\Local\\GitHubDesktop\\bin;E:\\Git\\Git\\bin;E:\\Tesseract-OCR;E:\\Fiddler;C:\\Users\\DELL\\AppData\\Roaming\\npm;E:\\Sublime Text 3;C:\\Users\\DELL\\AppData\\Local\\Microsoft\\WindowsApps;E:\\android-ndk-r20b;E:\\adt-bundle-windows-x86_64-20140702\\sdk\\platform-tools;E:\\ffmpeg\\bin;E:\\Git\\usr\\bin\\vendor_perl;E:\\Git\\usr\\bin\\core_perl",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+    "PKG_CONFIG_PATH": "/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 142 Stepping 11, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "8e0b",
+    "ProgramData": "C:\\ProgramData",
+    "PROGRAMFILES": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PS1": "\\[\\033]0;$TITLEPREFIX:$PWD\\007\\]\\n\\[\\033[32m\\]\\u@\\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n$ ",
+    "PSModulePath": "%ProgramFiles%\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "PWD": "/f/编程实战/爬虫/crack-js/MYFREEMP3",
+    "SHELL": "E:\\Git\\usr\\bin\\bash.exe",
+    "SHLVL": "1",
+    "SSH_ASKPASS": "/mingw64/libexec/git-core/git-gui--askpass",
+    "SYSTEMDRIVE": "C:",
+    "SYSTEMROOT": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\DELL\\AppData\\Local\\Temp",
+    "TESSDATA_PREFIX": "E:\\Tesseract-OCR\\tessdata",
+    "TMP": "C:\\Users\\DELL\\AppData\\Local\\Temp",
+    "TMPDIR": "C:\\Users\\DELL\\AppData\\Local\\Temp",
+    "USERDOMAIN": "DESKTOP-VAG54VF",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-VAG54VF",
+    "USERNAME": "DELL",
+    "USERPROFILE": "C:\\Users\\DELL",
+    "WINDIR": "C:\\WINDOWS",
+    "_": "/usr/bin/winpty"
+  },
+  "sharedObjects": [
+    "E:\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\winmmbase.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\System32\\UMPDC.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll"
+  ]
+}

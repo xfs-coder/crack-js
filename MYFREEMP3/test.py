@@ -5,10 +5,10 @@ import requests
 
 with open('test.js', 'r', encoding='UTF-8') as f:
     ctx = execjs.compile(f.read())
-    data = ctx.call('encode', 'text=告白气球&page=1&type=migu')
+    data = ctx.call('encode', 'text=晴天&page=1&type=migu')
+    print(data)
 
-cookies = {
-    'UM_distinctid': '16f1e700acb451-020ff17d0e6e1b-353166-144000-16f1e700acc438',
+cookies = {    'UM_distinctid': '16f1e700acb451-020ff17d0e6e1b-353166-144000-16f1e700acc438',
     'CNZZDATA1277593802': '620896084-1576759316-%7C1576772822',
 }
 
